@@ -1,0 +1,4 @@
+showering
+	-brushing my teeth
+	eating breakfast or going to class
+		-going outside
