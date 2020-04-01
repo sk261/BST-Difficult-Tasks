@@ -56,6 +56,15 @@ class BinarySearchNode:
 
     def __str__(self):
         return self.toString()
+
+    def inorder(self):
+        ret = ""
+        if not self.left is None: 
+            ret += self.left.inorder()
+        ret += self.data + "\n"
+        if not self.right is None:
+            ret += self.right.inorder()
+        return ret
     
     def toString(self, level = 0, isLeft = False):
         tabs = ""

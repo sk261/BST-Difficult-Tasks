@@ -8,6 +8,7 @@ helpMessage = \
 /save <filename>    saves the binary search tree into a file
 /view               prints the binary search tree
 /q or /exit         ends the program
+/todo               prints list from easiest to hardest things
 <task of the day>   If you enter in a task of the day, we'll traverse the tree and find it's relative difficulty
 """
 
@@ -34,6 +35,9 @@ while True:
             continue
         elif command == "view":
             print(currentBST)
+            continue
+        elif command == "todo":
+            print(currentBST.inorder())
             continue
         elif command in ["q", "exit"]:
             quit()
